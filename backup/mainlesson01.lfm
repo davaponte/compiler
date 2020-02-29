@@ -1,0 +1,42 @@
+object MainForm: TMainForm
+  Left = 269
+  Height = 174
+  Top = 250
+  Width = 756
+  Caption = 'Let''s build an interpreter - Lesson 01'
+  ClientHeight = 174
+  ClientWidth = 756
+  Position = poDesktopCenter
+  object btnGo: TButton
+    Left = 653
+    Height = 25
+    Top = 68
+    Width = 75
+    Caption = '&Go'
+    Default = True
+    OnClick = btnGoClick
+    TabOrder = 1
+  end
+  object edExpression: TLabeledEdit
+    Left = 24
+    Height = 28
+    Top = 28
+    Width = 704
+    EditLabel.Height = 16
+    EditLabel.Width = 704
+    EditLabel.Caption = 'Expression'
+    EditLabel.ParentColor = False
+    TabOrder = 0
+  end
+  object edResult: TLabeledEdit
+    Left = 24
+    Height = 28
+    Top = 112
+    Width = 704
+    EditLabel.Height = 16
+    EditLabel.Width = 704
+    EditLabel.Caption = 'Result'
+    EditLabel.ParentColor = False
+    TabOrder = 2
+  end
+end
